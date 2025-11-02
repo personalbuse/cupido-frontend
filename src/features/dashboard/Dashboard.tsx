@@ -7,6 +7,7 @@ import FiltersPage from "@/features/filters/components/FiltersPage";
 
 const Dashboard: React.FC = () => {
   const { closeModals, logout, user } = useAppStore();
+  const { closeModals, logout, user } = useAppStore();
   const { toast } = useToast();
   const [showFilters, setShowFilters] = useState(false);
 

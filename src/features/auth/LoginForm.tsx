@@ -159,6 +159,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
         });
         onClose();
         openDashboard();
+        openDashboard();
       } else {
         console.log("Estado de cuenta desconocido:", estadocuenta);
         toast({
@@ -420,6 +421,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Ingresa tu contraseña"
+                    maxLength={50}
                     maxLength={50}
                     className="w-full px-2.5 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-pink-500 focus:border-transparent text-xs"
                   />
